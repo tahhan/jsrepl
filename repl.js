@@ -5,6 +5,9 @@
   repl_logo = '\t   _       .---.  .--. .---. .-.\n\t  :_;      : .; :: .--\': .; :: :\n\t  .-. .--. :   .\': `;  :  _.\': :\n\t  : :`._-.\': :.`.: :__ : :   : :__\n\t  : :`.__.\':_;:_;`.__.\':_;   :___.\'\n\t.-. :         jsREPL v0.1\n\t`._.\' Amjad Masad & Max Shawabkeh';
   this.JSREPL = (function() {
     function JSREPL() {
+      $LAB.setGlobalDefaults({
+        UseLocalXHR: false
+      });
       this.lang = null;
       this.engine = null;
       this.examples = null;

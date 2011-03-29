@@ -16,6 +16,8 @@ repl_logo = '''
 # the other classes in the project.
 class @JSREPL
   constructor: ->
+    # DEBUG
+    $LAB.setGlobalDefaults(UseLocalXHR: off)
     # The definition of the current language.
     @lang = null
     # The interpreter engine of the current language.
